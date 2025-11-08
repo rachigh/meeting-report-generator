@@ -183,6 +183,8 @@ cython_debug/
 *.db
 *.sqlite
 app.db
+app.db-test
+test.db
 
 # Upload directories with user files
 uploads/
