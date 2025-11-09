@@ -4,7 +4,7 @@ Transcription service using OpenAI Whisper API.
 
 import os
 from typing import Optional, Dict, Any
-from openai import OpenAI  # Use sync client instead
+from openai import OpenAI  
 import asyncio
 
 from app.core.config import settings
@@ -33,7 +33,6 @@ class TranscriptionService:
             Dictionary containing transcription and metadata
         """
         try:
-            # Use run_in_executor to run sync OpenAI call in thread pool
             loop = asyncio.get_event_loop()
             
             def _transcribe():
@@ -87,8 +86,6 @@ class TranscriptionService:
         Returns:
             Dictionary containing transcription with speaker segments
         """
-        # For now, use standard transcription
-        # In production, you might want to integrate with AssemblyAI or similar
         result = await self.transcribe_audio(file_path, language)
         
         # Add a note that speaker diarization is not available

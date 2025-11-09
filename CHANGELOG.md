@@ -41,19 +41,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Pydantic for data validation
 - OpenAI API integration
 - ReportLab for PDF generation
-
-## [Unreleased]
-
-### Planned Features
-- Speaker diarization (identify different speakers)
-- Real-time transcription streaming
-- Multi-language report translation
-- Custom report templates
-- Webhook notifications
-- Batch processing
-- Cloud storage integration (S3, GCS)
-- Advanced analytics dashboard
-
 ---
 
 [1.0.0]: https://github.com/rachigh/report-generator/releases/tag/v1.0.0

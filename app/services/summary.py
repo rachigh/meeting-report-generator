@@ -5,7 +5,7 @@ Summary generation service using OpenAI GPT.
 import json
 import asyncio
 from typing import Dict, Any, List
-from openai import OpenAI  # Use sync client
+from openai import OpenAI  
 
 from app.core.config import settings
 from app.schemas.report import Topic, Decision, ActionItem
@@ -32,7 +32,7 @@ class SummaryService:
             # Create the prompt for structured summary
             prompt = self._create_summary_prompt(transcription)
             
-            # Use run_in_executor to run sync OpenAI call in thread pool
+            
             loop = asyncio.get_event_loop()
             
             def _generate():
